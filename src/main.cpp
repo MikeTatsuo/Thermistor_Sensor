@@ -11,6 +11,8 @@ float logR2, R2, Kelvin, Celsius, Farenheit;
 float A = 0.001129148, B = 0.000234125, C = 0.0000000876741; //steinhart-hart coeficients for thermistor
 
 void setup() {
+  pinMode(ThermistorPin, INPUT);
+
   lcd.init();
   lcd.backlight();
 
